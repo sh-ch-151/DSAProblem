@@ -15,7 +15,14 @@ public class LevelOrderSuccessorDriver
 		tree.root.left.right = new TreeNode(5);
 		tree.root.right.left = new TreeNode(6);
 		tree.root.right.right = new TreeNode(7);
-		TreeNode ans = tree.getSuccessor(tree.root, 6);
-		System.out.println(ans.val);
+		TreeNode ans = tree.getSuccessor(tree.root,7);
+		if(ans != null)
+		{
+			System.out.println(ans.val);
+		}
+		else
+		{
+			System.out.println("No value present");
+		}
 	}
 }
