@@ -4,7 +4,7 @@ public class SumOfPathNodes
 {
 	public TreeNode root;
 	
-	SumOfPathNodes()
+	public SumOfPathNodes()
 	{
 		root = null;
 	}
@@ -22,7 +22,7 @@ public class SumOfPathNodes
 		}
 		return findPathSum(root.left, sum) + findPathSum(root.right, sum);
 	}
-	
+
 	public int findSumPathNummbers(TreeNode root)
 	{
 		return findPathSum(root, 0);

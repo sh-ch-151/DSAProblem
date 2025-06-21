@@ -22,7 +22,6 @@ public class LevelOrderSuccesor
 		queue.offer(root);
 		while(!queue.isEmpty())
 		{
-			int size = queue.size();
 			TreeNode current = queue.poll();
 			if(current.left != null)
 			{

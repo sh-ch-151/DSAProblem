@@ -22,7 +22,8 @@ public class LeftViewTree
 		que.offer(root);
 		while(!que.isEmpty())
 		{
-			for(int i = 0; i < que.size(); i++)
+			int levelSize = que.size();
+			for (int i = 0; i < levelSize; i++)
 			{
 				TreeNode currNode = que.poll();
 				if(i == 0)
@@ -37,7 +38,6 @@ public class LeftViewTree
 				{
 					que.offer(currNode.right);
 				}
-				
 			}
 		}
 		return nodes;
